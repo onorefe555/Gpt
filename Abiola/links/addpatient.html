@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add patient</title>
+</head>
+<link rel="shortcut icon" href="../img/logo-7038737_1280.png" type="image/png">
+<link rel="stylesheet" href="../style/index.css">
+<link rel="stylesheet" href="../style/alldoctor.css">
+<link rel="stylesheet" href="../style/adddoc.css">
+<body>
+    <header>
+        <script type="text/javascript" lang="javascript" src="../script/script.js"></script>
+       
+
+        <div class="header_container">
+              <div id="logo"><img src="../img/logo-7038737_1280.png" alt="Logo"></div>
+    
+               <div class="slide"><h3 id="slider">Your Health is our Number one priority</h3>
+                <div class="section section-a" id="show-one" >
+                  <p class="text">  All doctors treat, </p>
+                  <p class="text">but a good doctor </p>
+                  <p class="text"> lets nature  </p>
+                  <p class="text"> heal. </p>
+              </div>
+          
+          
+              <div class="section section-b" id="show-two">
+                  <p class="text"> “There are only two sorts of doctors:  </p>
+                  <p class="text"> those who practice with their brains, </p>
+                  <p class="text"> and those who </p>
+                  <p class="text">  practice with their tongues.” </p>
+              </div>
+          
+          
+               <div class="section section-c" id="show-tree">
+                  <p class="text">“The aim of medicine is to </p>
+                  <p class="text"> prevent disease and prolong life;</p>
+                  <p class="text"> the ideal of medicine is to</p>
+                  <p class="text"> eliminate the need of a physician.” </p>
+              </div>
+              </div>
+    
+               <div class="doctor">
+                    <div>
+                        <p>Doctor Abiola </p>
+                    </div>
+                     <div>
+                        <img src="../img/doctor-8447863_1280.png" alt="Doctor">
+                     </div>
+               </div>
+        </div>
+       </header> 
+    
+       <div class="dashbord_container">
+             <div class="dashbord">
+                  <button><a id="dash" href="../dash.html">Dashboard</a></button> 
+                   <button  ><a href="alldoctor.html">All Doctor</a></button>
+                   <button class="current"><a href="./addpatient.html" >Add Patient</a></button>
+                   <button ><a href="#">All Drug</a></button>
+                   <button ><a href="#">Drug</a></button>
+                   <button ><a href="./login.html">Logout</a></button>
+    
+                  <img src="../img/doctor.png" alt="doctor">
+                  <p>Make An Appointment</p>
+             </div>
+    
+                      <!-- aside section -->
+             
+                <div class="doctor-profile" >
+                        <h3 class="header_personal_health">Personal Health Record</h3>
+                        <p>Kindly input all the patient information here</p>
+
+                        <div class="container">
+                            <h3 class="h3" id="header_computerize">Computerized Patient Management System Database Storage</h3>
+                            <p>This database is mainly for storing Patient Information</p>
+                            <div class="input-cont">
+                                
+                                <div>
+                                <label id="header_computerize_6">Full Name:</label>
+                                <input type ="text" id="name_el"placeholder ="Enter your full name here">
+                                </div>
+                            
+                                <div>
+                                    <label id="header_computerize_5">Prefer Name:</label>
+                                    <input type ="text" id="address_el"placeholder ="Enter your prefer name">
+                                </div>
+                                
+                                <div>
+                                    <label id="header_computerize_4">Patient Identifier :</label>
+                                    <input type ="text" id="patientIdentifier_el"placeholder ="Enter patient identifier here">
+                                </div>
+                            
+                            </div>
+
+                            <div class="input-cont">
+                                
+                                <div>
+                                <label id="header_computerize_3">D.O.B:</label>
+                                <input type ="text" id="dateOfBirth_el"placeholder ="Date Of Birth">
+                                </div>
+                            
+                                <div>
+                                    <label id="header_computerize_2">Blood type:</label>
+                                    <input type ="text" id="bloodType_el"placeholder ="Enter your Blood type">
+                                </div>
+                                
+                                <div>
+                                    <label id="header_computerize_1">Gender:</label>
+                                    <input type ="text" id="gender_el" placeholder ="Male or Female">
+                                </div>
+                                     <small id="error_message"></small>
+                            </div>
+                            
+                            <div class ="li_container">
+                                
+                                <div id="unorderlist_information">
+                                <label>Patient Information</label>
+                                <ul id="unorderlist_information">
+                                    <span id="li_name_el"></span>
+                                    <span id="li_ad_el"></span>
+                                    <span id="li_pho_el"></span>
+                                    <span id="dateOfBirth_li"></span>
+                                </ul>
+                               </div>
+                            
+                            </div>
+                            
+                            <div class ="btn_container">
+                                <div>
+                                <button id="btn_addInformation">Add Information</button>
+                            </div>
+                            
+                            <div>
+                                <button id="btn_delete">Delete</button>
+                            </div>
+                            
+                            <div>
+                                <button id="btn_save">Save</button>
+                            </div>
+                            
+                            <div>
+                                <button id="delete_all_btn">Clear</button>
+                            </div>
+                            
+                            </div>
+                        </div>
+                  </div>
+
+                </div>   
+                
+       </div>
+       <script type="text/javascript" lang="javascript" src="../script//patient.js"></script>
+       <script>
+                let colorArrays =["cycan","blue","green","red","black"]
+                function disPlaylight() {
+                    let randColors= colorArrays[Math.floor(Math.random()*colorArray.length)]
+                    document.getElementById("header_computerize").style.color = randColors
+                    document.getElementById("header_computerize_1").style.color = randColors
+                    document.getElementById("header_computerize_2").style.color = randColors
+                    document.getElementById("header_computerize_3").style.color = randColors
+                    document.getElementById("header_computerize_4").style.color = randColors
+                    document.getElementById("header_computerize_5").style.color = randColors
+                    document.getElementById("header_computerize_6").style.color = randColors
+                     }
+                  setInterval(disPlaylight, 300)
+       </script>
+</body>
+</html>
